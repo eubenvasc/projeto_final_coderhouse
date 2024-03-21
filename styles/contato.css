@@ -43,6 +43,7 @@ body{
     align-items: center;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 0px) and (max-width: 767px){
     .conteudo{
         display: block;
@@ -60,3 +61,5 @@ body{
         max-width: 350px;
     }
 }
+=======
+>>>>>>> bdad0d60e04a2f055f3dfc9add30c0f6e7fe0627

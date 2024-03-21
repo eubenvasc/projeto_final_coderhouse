@@ -59,7 +59,49 @@ main button{
     text-align: center;
     margin-left: 140px;
 }
+<<<<<<< HEAD
 @media only screen and (min-width: 992px) {
+=======
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.footer{
+    display: flex;
+}
+.logoTitle{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    margin-left: -15px;       
+}
+#imgministerio{
+    height: 90px;
+    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+}
+.redesSociais{
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+}
+.redesSociais h1{
+    color: white;
+    font-size: 20px;
+}
+.redesSociais img{
+    height: 50px;
+}
+#brasao{
+    padding-top: 10px;
+    height: 80px;
+    margin-left: 20px;
+}
+>>>>>>> bdad0d60e04a2f055f3dfc9add30c0f6e7fe0627
 #colunas {
     display: grid;
     margin: 5%;
@@ -85,6 +127,7 @@ main button{
 .item9 { grid-area: item9; }
 .item10 { grid-area: item10; }
 .item11 { grid-area: item11; }
+<<<<<<< HEAD
 }
 @media only screen and (min-width: 0px) and (max-width: 767px){
     #colunas > * {
@@ -116,3 +159,5 @@ main button{
 @media only screen and (min-width: 992px) {
 
 }
+=======
+>>>>>>> bdad0d60e04a2f055f3dfc9add30c0f6e7fe0627
