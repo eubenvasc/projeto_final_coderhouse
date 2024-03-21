@@ -245,3 +245,24 @@ footer{
 .redesSociais img{
     height: 50px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .links_casas{
+        display: none;
+    }
+    .primeiro_bloco{
+        max-height: 300px;
+    }
+    .segundo_bloco{
+        max-height: 300px;
+    }
+    .principal h3{
+        font-size: 20px;
+    }
+    .principal p{
+       font-size: 15px;
+    }
+    .curiosidades div p{
+        line-height: 15px;
+        font-size: 15px;
+    }
+}

@@ -14,9 +14,12 @@
 </head>
 <body>
     <header>
+    
         <a href="index.html"><img src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a>
-        <nav>
-            <ul>                
+
+        <nav class="title1" >
+            <div id="ponto" onclick="toggleElementos()">:</div>
+            <ul class="elementos-ocultos">                
                 <li><a href="sobre.html">sobre</a></li>               
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">casas</a>
@@ -33,8 +36,10 @@
                 <li><a href="novidades.html">novidades</a></li>
                 <li><a href="contato.html">contatos</a></li>
             </ul>
+        
         </nav>
     </header>
+
 
     <main>
         <section class="bandeira_alunos">
@@ -69,7 +74,7 @@
                 </div>
             </article>
 
-            <article class="curiosidades">
+            <article class="curiosidades" >
                 <div>
                     <h3>Curiosidade</h3>
                     <p>Quem sabe sua morada é a Grifinória; casa onde habitam os corações indômitos; ousadia e sangue-frio e nobreza destacam os alunos da Grifinória dos demais". Com este verso, o Chapéu Seletor apresentou a casa da Grifinória em uma das canções nas cerimônias de seleção de Hogwarts.<br>Com coragem, lealdade e companheirismo entre as qualidades que se destacam em seus membros, a Grifinória já foi casa de vários cantores e artistas do mundo bruxo, pessoas que levaram sua vida sempre com ousadia.<br>Embora a Sonserina leve a fama de "produzir" um maior número de bruxos das trevas, ser da Grifinória não significa que a pessoa seja do bem, afinal sua lealdade pode ter se voltado para o lado errado. Basta ver o exemplo de Peter Pettigrew.<br>Entre os <span> membros mais conhecidos da Grifinória estão:</span> Albus Dumbledores, Rubeus Hagrid, (diretora da Grifinória mais recente), Tiago Potter, Lily Potter, Harry Potter, Ronald Weasley (bem como todos os demais Weasleys), Hermione Granger, entre outros.</p>
@@ -96,5 +101,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+    <script>
+        // Função para alternar a visibilidade dos elementos ocultos
+        function toggleElementos() {
+            var elementos = document.querySelector('.elementos-ocultos');
+            if (elementos.style.display === "none") {
+                elementos.style.display = "block";
+            } else {
+                elementos.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -118,3 +118,12 @@ body{
     display: flex;
     align-items: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .conteudo > * {
+        display: block;
+        margin-bottom: 20px; /* Espaçamento entre os elementos */
+    }
+    .conteudo p{
+        font-size: 9px;
+    }
+}

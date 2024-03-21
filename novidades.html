@@ -12,10 +12,12 @@
     <div class="conteiner">
         
         <header>
+    
             <a href="index.html"><img src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
+    
+            <nav class="title1" >
+                <div id="ponto" onclick="toggleElementos()">:</div>
+                <ul class="elementos-ocultos">                
                     <li><a href="sobre.html">sobre</a></li>               
                     <li class="dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">casas</a>
@@ -28,11 +30,14 @@
                         </div>
                     </li>
                     <li><a href="disciplinas.html">disciplinas</a></li>
-                    <li><a href="docentes.html">corpo docente</a></li>                    
+                    <li><a href="docentes.html">corpo docente</a></li>
+                    <li><a href="novidades.html">novidades</a></li>
                     <li><a href="contato.html">contatos</a></li>
                 </ul>
+            
             </nav>
         </header>
+    
         
         <div class="contagem">
             <h1>COPA DAS CASAS - Contagem</h1>            
@@ -64,23 +69,37 @@
                 <p>O objetivo de uma partida de quadribol é fazer mais pontos que o time adversário. Cada gol, feito com uma goles nos aros pelos artilheiros, vale dez pontos, enquanto a dificílima captura do pomo de ouro, feita pelo apanhador, vale cento e cinquenta pontos. Os aros são defendidos pelos goleiros, enquanto os balaços, bolas enfeitiçadas para atingirem jogadores aleatoriamente, são atiradas para o outro lado do campo pelos batedores, que utilizam bastões.</p>
             </article>  
         </main>
+      
         <footer>
             <div class="conteudoFigura1">
                 <a href="index.html"><img class="logoTitle" id="brasao" src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a>
                 <h1 class="logoTitle">Escola de Magia e <br> Bruxaria de Hogwarts</h1>
-            </div>            
+            
             <img id="imgministerio" src="imagens/ministerio-logo.png" alt="logo do Ministério da Magia">
+    
             <div class="redesSociais">
                 <h1>Redes Sociais:</h1>
                 <img src="imagens/instagram.png" alt="Ícone para direcionar para o Instagram">
                 <img src="imagens/facebook.png" alt="Ícone para direcionar para o facebook">
                 <img src="imagens/twitterx.png" alt="Ícone para direcionar para o twitter">
                 <img src="imagens/linkedin.png" alt="Ícone para direcionar para o linkedin">
-            </div> 
-        </footer>  
+            </div>
+        </div>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+    <script>
+        // Função para alternar a visibilidade dos elementos ocultos
+        function toggleElementos() {
+            var elementos = document.querySelector('.elementos-ocultos');
+            if (elementos.style.display === "none") {
+                elementos.style.display = "block";
+            } else {
+                elementos.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

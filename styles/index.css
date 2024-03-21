@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
-    background: hsl(0, 0%, 0%); 
-    height: auto;    
+    background: hsl(0, 0%, 0%);
+    height: auto;
 }
 
 main{
@@ -10,12 +10,12 @@ main{
     padding: 0;
     background-size: 100% 100%;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     height: 960px;
 }
-.conteudoFigura1{
+.conteudo1Figura{
     display: flex;
 }
 main h1{
@@ -52,7 +52,7 @@ main button{
 }
 main button a{
     color: black;
-    text-decoration: none;    
+    text-decoration: none;
 }
 .apresentacao1{
     background-color: black;
@@ -70,12 +70,12 @@ main button a{
     justify-content: center;
     align-items: center;
 }
-.apresentacao2 img{    
+.apresentacao2 img{
     margin: 0;
     padding: 0;
     background-size: 100% 100%;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     height: 960px;
     width: 100%;
 }
@@ -85,7 +85,7 @@ main button a{
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 60px;
-    font-size: 25px;    
+    font-size: 25px;
 }
 
 .apresentacao2 button{
@@ -96,9 +96,175 @@ main button a{
     height: 45px;
     border-radius: 20px;
     margin-bottom: 60px;
-    
+
 }
 .apresentacao2 button a{
     color: black;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+
+    header {
+        padding: 10px;
+        width: 100%
+    }
+    header img{
+        max-width: 100px;  
+        max-height: 50px;
+        margin-left: 0;
+    }
+    
+    .title1 li{
+        max-width: 50px;
+        max-height: 10px;
+    }
+    main{
+        max-width: 100%;
+        height: 600px;
+    }
+    main h1{
+        font-size:70px;
+        margin: 10px;
+       margin-left: 10px;
+       line-height: 50px;
+    }
+    main h2{
+        font-size:20px;
+        margin: 40px;
+       margin-left: 10px;
+       line-height: 18px;
+    }
+    main button{
+        font-size: 18px;
+        width: 150px;
+        margin-left: 10px;
+    }
+    .apresentacao2 img{
+        width: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    #brasao{
+        width: 100px;
+        height: auto;
+    }
+    .logo h3{
+        width: 30px;
+        font-size: 7px;
+    }
+    .apresentacao1 p{
+        font-size: 15px;
+        max-width: 75%;
+        margin-left: 15px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .apresentacao2 img{
+       width: 100%;
+        height: auto;
+    }
+    .apresentacao2 p{
+        margin-top: 0;
+        font-size: 15px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .apresentacao2 button{
+       margin-top: 100px;
+    }
+    .rodape {
+        grid-area: rodape;
+        background-color: #000000;
+        max-width:440px;
+        margin: 0; /* Remover todas as margens */
+        margin-left: -35px;
+        padding: 10px; /* Adicionar um pequeno espaçamento interno */
+        display: flex; /* Usar flexbox para organizar os elementos */
+        flex-wrap: wrap; /* Permitir que os elementos quebrem para a próxima linha se necessário */
+        justify-content: left; /* Centralizar os elementos horizontalmente */
+        align-items: center; /* Centralizar os elementos verticalmente */
+    
+      }
+      
+      .logoTitle {
+        font-size: 16px; /* Tamanho de fonte ajustado */
+        color: white;
+        margin: 0;
+      }
+      
+      #brasao {
+        height: 50px; /* Ajustando altura */
+        margin-right: 10px; /* Ajustando margem */
+      }
+      
+      #imgministerio {
+        height: 50px; /* Ajustando altura */
+        filter: invert(1); /* Invertendo cores */
+      }
+      
+      .redesSociais {
+        margin-top: 10px; /* Ajustando margem */
+      }
+      
+      .redesSociais h4 {
+        color: white;
+        font-size: 16px; /* Tamanho de fonte ajustado */
+      }
+      
+      .redesSociais img {
+        height: 30px; /* Reduzindo o tamanho do ícone */
+        margin: 0 5px; /* Ajustando margem */
+      }
+      .lista-alunos ul {
+        margin: 0; /* Remover margem */
+        padding: 0; /* Remover padding */
+        text-align: center; /* Centralizar o texto */
+      }
+    
+      .lista-alunos li {
+        display: block; /* Colocar os itens da lista em blocos */
+        margin: 10px auto; /* Centralizar os itens da lista horizontalmente */
+        width: 80%; /* Definir largura máxima para os itens */
+      }
+      .conteudoFigura1 h1{
+        font-size: 8px;
+      }
+      
+      
+      .elementos-ocultos {
+        display: none;
+        padding-left: 20px;
+        font-size: 14px; /* Diminui o tamanho da fonte */
+        position: absolute; /* Faz com que os elementos sejam posicionados livremente */
+        background-color: hsl(0, 0%, 10%); /* Cor de fundo */
+        border: 1px solid #ccc; /* Borda */
+        border-radius: 5px; /* Borda arredondada */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra */
+        z-index: 1; /* Garante que fiquem acima de outros elementos */
+        min-width: 200px; /* Largura mínima para acomodar o texto */   
+        white-space: nowrap; /* Impede quebrar a linha */
+    }
+    }
+    .elementos-ocultos li {
+        margin-bottom: 30px; /* Espaçamento entre os itens da lista */
+        margin-left: 0;
+        font-size: 10px;
+    }
+    #ponto{
+        cursor: pointer;
+        background-color: hsl(0, 0%, 10%);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        position: absolute; /* Faz com que os elementos sejam posicionados livremente */
+        top: 40px; /* Define a distância do topo */
+        right: 10px; /* Posiciona o botão no lado direito */
+    }
+    .title1{
+        overflow: hidden;
+    }
+    

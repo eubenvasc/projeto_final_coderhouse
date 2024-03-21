@@ -1,3 +1,8 @@
+@media only screen and (min-width: 992px) {
+ #ponto{
+    display: none;
+ }
+}
 header{
     background-color: #000000;
     height: 7.5rem;
@@ -89,4 +94,104 @@ footer .redesSociais h1{
 }
 footer .redesSociais img{
     height: 50px;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    
+    header {
+        padding: 10px;
+        width: 100%;
+    }
+    header img{
+        max-width: 150px;  
+        max-height: 75px;
+        margin-left: 0;
+    }
+    
+    .title1 li{
+        max-width: 50px;
+        max-height: 10px;
+    }
+    .elementos-ocultos {
+        display: none;
+        padding-left: 20px;
+        font-size: 14px; /* Diminui o tamanho da fonte */
+        position: absolute; /* Faz com que os elementos sejam posicionados livremente */
+        background-color: hsl(0, 0%, 10%); /* Cor de fundo */
+        border: 1px solid #ccc; /* Borda */
+        border-radius: 5px; /* Borda arredondada */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra */
+        z-index: 1; /* Garante que fiquem acima de outros elementos */
+        min-width: 200px; /* Largura mínima para acomodar o texto */   
+        white-space: nowrap; /* Impede quebrar a linha */
+    }
+    .elementos-ocultos li {
+        margin-bottom: 30px; /* Espaçamento entre os itens da lista */
+        margin-left: 0;
+        font-size: 10px;
+    }
+    #ponto{
+        cursor: pointer;
+        background-color: hsl(0, 0%, 0%);
+        border: 1px solid #fffcfc;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        position: absolute; /* Faz com que os elementos sejam posicionados livremente */
+        top: 40px; /* Define a distância do topo */
+        right: 10px; /* Posiciona o botão no lado direito */
+    }
+    .title1{
+        overflow: hidden;
+    }
+    
+
+.rodape {
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+}
+.rodape h5{
+  font-size: 8px;
+  margin-bottom: -10px;
+}
+
+.logoTitle h5 {
+    font-size: 8px;
+    color: white;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+
+#brasao, #imgministerio {
+    max-width: 150px; /* Reduz a largura máxima das imagens dentro da seção */
+    max-height: 50px; /* Mantém a proporção da imagem */
+    margin-bottom: -10px;
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.redesSociais h4 {
+    color: white;
+    font-size: 8px;
+    margin-right: 5px;
+    margin-bottom: -10px;
+}
+
+.redesSociais img {
+    margin-right: 5px;
+    max-width: 20px; /* Reduz a largura máxima das imagens dentro da seção */
+    max-height: 20px; /* Mantém a proporção da imagem */
+    margin-bottom: -10px;
+}
+.conteudoFigura1 h1{
+    font-size: 8px;
+  }
 }
